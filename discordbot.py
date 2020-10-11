@@ -24,8 +24,8 @@ async def rect(ctx, about = "募集", cnt = 4, settime = 10.0) :
     await ctx.send(embed=test)
 
     #投票の欄
-    await ctx.add_reaction('⏫')
-    await ctx.add_reaction('✖')
+    await ctx.message.add_reaction('⏫')
+    await ctx.message.add_reaction('✖')
 
 client.run(token)
 
